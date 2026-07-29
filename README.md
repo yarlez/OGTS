@@ -16,25 +16,44 @@ OGTS defines editorial principles, an evidence model, notation standards, output
 
 **Current Status:** Draft (Version 0.1)
 
-The specification is under active development.
+The governance foundation has been established. The [Project Charter](docs/charter.md) is currently the only normative technical specification.
+
+The next major milestone is drafting the Core Standard at `docs/core-standard.md`.
 
 ## Repository Structure
 
+Current repository contents:
+
 ```
-docs/               Core specification
-modules/            Language and record-specific modules
-references/         Supporting reference material
+CONTRIBUTING.md       Contribution and standards-development guidance
+LICENSE.md            CC BY 4.0 license
+README.md             Project overview and roadmap
+docs/charter.md       Draft normative project charter
+```
+
+As the project develops, additional material is expected to be organized approximately as follows:
+
+```
+docs/               Core specification documents
+modules/            Language and regional modules
+references/         Reference modules and supporting material
 examples/           Sample documents and expected outputs
 tests/              Conformance tests
-implementations/    AI implementations of the standard
+implementations/    Reference implementations of the standard
 ```
 
 ## Roadmap
 
-Version 0.1 focuses on establishing:
+The governance foundation for Version 0.1 includes:
 
 - Project Charter
-- Editorial Principles
+- Contribution guidelines
+- CC BY 4.0 licensing
+
+The next stages of Version 0.1 are expected to include:
+
+- Core Standard
+- Terminology
 - Evidence Model
 - Notation Standard
 - Output Profiles
@@ -45,8 +64,8 @@ Version 0.1 focuses on establishing:
 
 Contributions are welcome.
 
-Contribution guidelines will be published as the project matures.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines and standards-development principles.
 
 ## License
 
-License information will be added before the first public release.
+The OGTS specification is licensed under the [Creative Commons Attribution 4.0 International License](LICENSE.md).
