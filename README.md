@@ -16,7 +16,7 @@ OGTS defines editorial principles, an evidence model, notation standards, output
 
 **Current Status:** Draft (Version 0.1)
 
-The governance foundation has been established. The [Project Charter](docs/charter.md) is currently the only normative technical specification.
+The initial governance foundation has been established through the [Project Charter](docs/charter.md), contribution guidance, and license. Governance remains intentionally minimal at this stage: formal maintainer roles, decision-making procedures, and approval workflows have not yet been defined. The Project Charter is currently the only normative technical specification.
 
 The next major milestone is drafting the Core Standard at `docs/core-standard.md`.
 
