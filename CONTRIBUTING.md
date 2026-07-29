@@ -139,6 +139,14 @@ Typical statuses include:
 
 ---
 
+# Current Governance Scope
+
+The initial governance foundation consists of the Project Charter, contribution guidance, and license.
+
+Governance remains intentionally minimal at this stage. OGTS has not yet defined formal maintainer roles, decision-making procedures, or an approval workflow. The guidance in this document should not be interpreted as a formal approval system.
+
+---
+
 # Discussion
 
 Constructive discussion is encouraged.
