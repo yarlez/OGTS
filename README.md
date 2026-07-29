@@ -53,12 +53,13 @@ The governance foundation for Version 0.1 includes:
 The next stages of Version 0.1 are expected to include:
 
 - Core Standard
-- Terminology
 - Evidence Model
 - Notation Standard
 - Output Profiles
 - Quality Assurance Framework
 - German Language Module
+
+Terminology will initially be defined within the Core Standard and may be extracted into a separate document later if its scope warrants independent treatment.
 
 ## Contributing
 
