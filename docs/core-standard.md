@@ -13,6 +13,8 @@ This document currently defines the proposed architecture of the OGTS Core Stand
 
 Normative requirements will be drafted and reviewed after this outline is approved.
 
+**Structural Review:** Sections 1–4 approved on 29 Jul 2026; Sections 5–17 and the appendices remain under review.
+
 ---
 
 ## 1. Introduction
