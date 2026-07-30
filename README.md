@@ -12,6 +12,14 @@ OGTS defines editorial principles, an evidence model, notation standards, output
 - Support reproducible AI-assisted workflows.
 - Provide a common standard that can be implemented by multiple AI platforms and genealogy tools.
 
+## Professional Standards Alignment
+
+OGTS is designed to support genealogical research conducted in accordance with the [Genealogical Proof Standard and applicable ethical standards](https://bcgcertification.org/ethics-standards) published by the Board for Certification of Genealogists.
+
+Because the Genealogical Proof Standard evaluates the complete research process, OGTS conformance alone does not establish that a research conclusion meets that standard. OGTS supports such work by preserving source provenance, citations, uncertainty, conflicting information, and the separation of observation from interpretation.
+
+This alignment does not imply certification, endorsement, or affiliation.
+
 ## Project Status
 
 **Current Status:** Draft (Version 0.1)
