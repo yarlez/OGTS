@@ -102,6 +102,8 @@ The Core Standard should remain language-independent whenever practical.
 
 Reference material that supports implementations without changing the Core Standard should be placed in reference modules.
 
+Reference modules are informative and do not establish conformance requirements. Normative language or regional modules and output profiles are governed separately.
+
 Examples include:
 
 - Occupation lists
