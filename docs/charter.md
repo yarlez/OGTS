@@ -84,7 +84,9 @@ Different conforming implementations should produce substantially equivalent res
 
 ## 4. Conformance
 
-An implementation conforms to OGTS when it satisfies all mandatory requirements defined by the Core Standard together with any required language or reference modules.
+An implementation conforms to OGTS when it satisfies all mandatory requirements defined by the Core Standard together with any applicable normative companion specifications, language or regional modules, and output profiles.
+
+Informative reference modules do not establish conformance requirements.
 
 Conformance does not require the use of any specific software platform, artificial intelligence system, or OCR engine.
 
@@ -92,7 +94,7 @@ Conformance does not require the use of any specific software platform, artifici
 
 ## 5. Modularity
 
-OGTS consists of a Core Standard together with optional language, regional, and reference modules.
+OGTS consists of a Core Standard together with companion specifications, optional language and regional modules, output profiles, and informative reference modules.
 
 Examples include:
 
