@@ -13,7 +13,7 @@ This document currently defines the proposed architecture of the OGTS Core Stand
 
 Normative requirements will be drafted and reviewed after this outline is approved.
 
-**Structural Review:** Sections 1–4 approved on 29 Jul 2026; Sections 5–17 and the appendices remain under review.
+**Structural Review:** Sections 1–10 approved on 29 Jul 2026; Sections 11–17 and the appendices remain under review.
 
 ---
 
@@ -166,6 +166,12 @@ Define minimum requirements for:
 
 Define how implementations preserve original spelling, capitalization, punctuation, abbreviations, symbols, and textual order.
 
+Distinguish:
+
+- textual fidelity, covering characters and words
+- structural fidelity, covering reading order and meaningful layout
+- visual fidelity, covering appearance when required by an applicable profile
+
 ### 6.2 Layout and Reading Order
 
 Define how line breaks, columns, tables, marginalia, insertions, headers, footers, and other textual regions are represented.
@@ -251,6 +257,8 @@ Define requirements for:
 - uncertain translations
 - language changes and mixed-language documents
 
+Documentary translation will be the OGTS baseline. A reader-oriented translation may be produced through a declared profile, but it must remain distinguishable from and may not silently replace the documentary translation.
+
 Language-specific translation rules will remain in language modules.
 
 ---
@@ -260,6 +268,13 @@ Language-specific translation rules will remain in language modules.
 ### 10.1 Source-Bounded Extraction
 
 Define how extracted data remains traceable to the text or document feature that supports it.
+
+Require assertion-level provenance identifying:
+
+- the supporting source passage or document feature
+- the representation or transformation from which the assertion was extracted
+- any normalization applied
+- whether the value is explicit, supplied, interpreted, or inferred
 
 ### 10.2 Assertions and Inferences
 
