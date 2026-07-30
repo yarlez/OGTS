@@ -2,7 +2,7 @@
 
 **Version:** 0.1  
 **Status:** Outline Draft  
-**Document Type:** Normative  
+**Document Type:** Planned Normative  
 **Last Updated:** 29 Jul 2026
 
 ---
@@ -33,21 +33,48 @@ Clarify that the Core Standard does not prescribe a particular AI model, OCR eng
 
 State that the Core Standard implements the principles and scope established by the [OGTS Charter](charter.md).
 
+### 1.5 Document Architecture and Authority
+
+Define the intended document hierarchy:
+
+1. Charter
+2. Core Standard
+3. Normative companion specifications, including the Evidence Model, Notation Standard, and Quality Assurance Framework
+4. Applicable normative language or regional modules and output profiles
+5. Informative reference modules, examples, and implementation guidance
+
+Informative material does not establish conformance requirements. An extension may add scoped requirements but may not silently contradict a higher-level normative document.
+
+### 1.6 Companion-Specification Boundaries
+
+Summarize the responsibilities delegated to companion specifications, modules, profiles, examples, and conformance tests before presenting Core requirements.
+
+### 1.7 Notation and Profile Precedence
+
+Establish that the Core Standard defines semantic obligations, the Notation Standard defines canonical notation, and output profiles define serialization or compatibility adaptations. Output profiles may not redefine the meaning of canonical notation.
+
 ---
 
 ## 2. Conformance
 
-### 2.1 Conformance Model
+### 2.1 Conformance Subjects
 
-Define how an implementation, workflow, or output may claim conformance with the Core Standard and applicable modules or output profiles.
+Define two conformance subjects:
+
+- a conforming implementation, which satisfies the capabilities and behavior required by the applicable normative documents
+- a conforming output, which satisfies the content and representation requirements of an identified output profile
+
+Workflow conformance will remain deferred until the Quality Assurance Framework defines review procedures and acceptance criteria.
 
 ### 2.2 Requirement Terminology
 
 Define the intended use of **shall**, **shall not**, **should**, **should not**, and **may** in normative clauses.
 
-### 2.3 Conformance Classes
+### 2.3 Applicable Requirements
 
-Determine whether separate conformance classes are needed for transcription, translation, normalization, structured extraction, and complete workflows.
+Define how the Core Standard, normative companion specifications, applicable language or regional modules, and declared output profiles combine to determine conformance requirements.
+
+Informative reference modules do not establish conformance requirements.
 
 ### 2.4 Conformance Claims
 
@@ -59,17 +86,29 @@ Specify the version, modules, profiles, exceptions, and limitations that a confo
 
 Define the terminology required by the Core Standard, including:
 
+- source artifact
 - source representation
+- observation
 - transcription
 - diplomatic transcription
+- transliteration
 - editorial intervention
 - normalization
 - translation
 - structured extraction
+- transformation
+- output
 - assertion
 - provenance
 - uncertainty
 - output profile
+- module
+- language module
+- regional module
+- reference module
+- interpretation
+- inference
+- loss or degradation
 - implementation
 - conformance
 
@@ -79,16 +118,16 @@ Terminology will initially remain in the Core Standard and may be extracted late
 
 ## 4. Conceptual Model
 
-### 4.1 Transformation Stages
+### 4.1 Representations and Transformations
 
-Define the relationship among:
+Define the foundational lineage:
 
-1. source representation
-2. observation
-3. transcription
-4. normalization
-5. translation
-6. structured extraction
+1. source artifact
+2. source representation
+3. observation
+4. source transcription
+
+Define transliteration, normalization, translation, and structured extraction as separate, traceable transformations that may branch from one or more preceding representations. Do not impose a universal processing order unless an applicable profile requires one.
 
 ### 4.2 Separation of Representations
 
@@ -157,7 +196,7 @@ Define general requirements for:
 - abbreviations and symbols
 - unresolved meaning
 
-Exact notation will be defined in the Notation Standard or an applicable output profile.
+The Core Standard will define the required meaning of editorial states. The Notation Standard will define canonical notation. An output profile may adapt serialization for a target system but may not redefine the canonical meaning.
 
 ---
 
@@ -171,17 +210,33 @@ Require normalized content to remain separate from the source transcription.
 
 Define categories such as Unicode normalization, whitespace handling, date representation, name representation, abbreviation expansion, and target-system compatibility.
 
+Distinguish reversible typographic normalization from semantic transformations. Name representation, abbreviation expansion, and any other transformation that adds or changes meaning must remain explicitly marked and traceable to the source transcription.
+
 ### 8.3 Declared Rules
 
 Require implementations to identify the normalization rules and profiles they apply.
 
 ### 8.4 Target-System Compatibility
 
-Treat substitutions required by systems such as Ancestry.com as explicit output-profile transformations rather than changes to the source transcription.
+Treat substitutions required by target systems with character or encoding constraints as explicit output-profile transformations rather than changes to the source transcription.
 
 ---
 
-## 9. Translation Requirements
+## 9. Transliteration and Translation Requirements
+
+### 9.1 Transliteration
+
+Define requirements for:
+
+- separation of source-script transcription and transliteration
+- identification of the transliteration system or declared conventions
+- preservation of source-script content
+- reversible mapping where the selected system permits it
+- uncertainty and characters without direct equivalents
+
+Language- and script-specific transliteration rules will remain in language modules.
+
+### 9.2 Translation
 
 Define requirements for:
 
@@ -224,13 +279,13 @@ Define how output profiles may specify:
 
 - required fields and ordering
 - plain text, Markdown, JSON, XML, or other serializations
-- notation choices
+- serialization choices consistent with the canonical Notation Standard
 - target-system constraints
 - Unicode compatibility substitutions
 - machine-readable provenance
 - loss or degradation disclosures
 
-Profiles may constrain representation but may not silently change source meaning.
+Profiles may constrain representation but may not silently change source meaning or redefine canonical notation.
 
 ---
 
@@ -254,13 +309,21 @@ Detailed review procedures and acceptance criteria will be defined in the Qualit
 
 ## 13. Privacy and Ethical Handling
 
-Define requirements for:
+### 13.1 Faithful Preservation
+
+Define how a canonical transcription faithfully preserves source content, including sensitive content, without silent deletion or alteration.
+
+### 13.2 Access and Disclosure
+
+Define how access restrictions, redaction, data minimization, and publication-safe outputs remain separate from the canonical transcription and are explicitly identified as controlled derivatives.
+
+### 13.3 Ethical Requirements
+
+Define applicable requirements for:
 
 - living and potentially living people
 - sensitive personal, medical, financial, institutional, or genetic information
 - informed consent where applicable
-- access restrictions
-- data minimization
 - respectful treatment of historically sensitive material
 - disclosure of AI assistance and human responsibility
 
@@ -296,6 +359,8 @@ Define how language- and region-specific rules extend the Core Standard without 
 
 Define how informative resources such as abbreviation tables, occupation lists, date conventions, WGfF references, and Unicode mappings support implementations.
 
+Reference modules are informative and do not establish conformance requirements.
+
 ### 15.3 Extension Rules
 
 Define how extensions identify their scope, dependencies, status, and compatibility with the Core Standard.
@@ -316,21 +381,7 @@ Formal approval roles and workflows remain future governance work.
 
 ---
 
-## 17. Relationship to Companion Specifications
-
-Document the boundary between the Core Standard and:
-
-- Evidence Model
-- Notation Standard
-- Output Profiles
-- Quality Assurance Framework
-- language and regional modules
-- reference modules
-- examples and conformance tests
-
----
-
-## 18. Informative References and Related Work
+## 17. Informative References and Related Work
 
 Planned informative references include:
 
