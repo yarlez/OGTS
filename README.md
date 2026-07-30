@@ -24,9 +24,9 @@ This alignment does not imply certification, endorsement, or affiliation.
 
 **Current Status:** Draft (Version 0.1)
 
-The initial governance foundation has been established through the [Project Charter](docs/charter.md), contribution guidance, and license. Governance remains intentionally minimal at this stage: formal maintainer roles, decision-making procedures, and approval workflows have not yet been defined. The Project Charter is currently the only normative technical specification.
+The initial governance foundation has been established through the [Project Charter](docs/charter.md), contribution guidance, and license. Governance remains intentionally minimal at this stage: formal maintainer roles, decision-making procedures, and approval workflows have not yet been defined.
 
-The next major milestone is drafting the Core Standard at `docs/core-standard.md`.
+An [outline-stage Core Standard draft](docs/core-standard.md) has been created. Its section descriptions identify planned scope but do not yet establish conformance requirements. The next major milestone is reviewing and approving the outline before drafting normative clauses.
 
 ## Repository Structure
 
@@ -37,6 +37,7 @@ CONTRIBUTING.md       Contribution and standards-development guidance
 LICENSE.md            CC BY 4.0 license
 README.md             Project overview and roadmap
 docs/charter.md       Draft normative project charter
+docs/core-standard.md  Outline-stage Core Standard draft
 ```
 
 As the project develops, additional material is expected to be organized approximately as follows:
