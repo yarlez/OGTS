@@ -21,6 +21,7 @@ All contributions should support the following principles:
 - Make editorial decisions transparent.
 - Preserve uncertainty.
 - Promote reproducible results.
+- Support research conducted in accordance with the Genealogical Proof Standard and applicable ethical standards published by the Board for Certification of Genealogists.
 - Remain implementation-independent whenever possible.
 
 ---
@@ -107,6 +108,16 @@ Examples include:
 - Abbreviation tables
 - Unicode mappings
 - Date conventions
+
+---
+
+# Professional Standards Alignment
+
+Contributions should support genealogical research conducted in accordance with the [Genealogical Proof Standard and applicable ethical standards](https://bcgcertification.org/ethics-standards) published by the Board for Certification of Genealogists.
+
+The Genealogical Proof Standard evaluates a complete research process. Conformance with OGTS alone does not establish that a research conclusion meets that standard. Proposals should preserve the provenance, citations, uncertainty, conflicts, and distinctions between observation and interpretation needed for genealogists to conduct and document GPS-aligned research.
+
+Alignment does not imply certification, endorsement, or affiliation. Requirements derived from related work should be expressed in original, implementation-independent language with appropriate attribution.
 
 ---
 
